@@ -1,0 +1,24 @@
+Describe the for loop and compare with the for-each loop by describing the operation of each and discussing 
+how they differ from each other. You must include the role of enums in your description and provide an example 
+of a for loop and a for-each loop.
+
+Note1: Just a reminder than adding code samples, diagrams, link to pages or videos will increase the likelihood 
+for you to address multiple learning styles through your response.
+
+Note2: Please take into account Note 1 above when assessing / responding to your peer's posting.
+
+For loops contain an initial value the loop will start at, a condition for the loop to continue and an increment or 
+decrement value. While the condition evaluates to true, the statements inside the loop will continue to be 
+evaluated. When the condition evaluates to false, the for loop ends. For loops are constructed like this
+(http://math.hws.edu/javanotes/c3/s4.html):
+
+for ( initialization; continuation-condition; update )
+     statement
+
+For-each loops omit the iterator (condition), making the code cleaner and reducing the chance for errors
+(http://docs.oracle.com/javase/1.5.0/docs/guide/language/foreach.html). They are constructed like this:
+
+for (TimerTask t : c)
+        statement
+
+This translates to for each TimerTask t in c, or for each item in a sequence.
