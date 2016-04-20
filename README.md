@@ -35,7 +35,7 @@ Read the Learning Guide and Reading Assignments
 *	Complete and submit the Programming Assignment
 *	Make entries to the Learning Journal
 *	Take the Self-Quiz
-
+<br><br>
 Learning Guide Unit 2
 
 ##Unit 2: Repetitions
