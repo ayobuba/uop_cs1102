@@ -35,3 +35,27 @@ Read the Learning Guide and Reading Assignments
 *	Complete and submit the Programming Assignment
 *	Make entries to the Learning Journal
 *	Take the Self-Quiz
+
+Learning Guide Unit 2
+
+##Unit 2: Repetitions
+
+##Topics:
+* Introduction to control structures within Java
+* Algorithm Development
+* While, do, and for loops
+* Learning Objectives:
+
+##By the end of this Unit, you will be able to:
+* Recognize what a control structure is in Java and articulate its purpose
+* Articulate what an algorithm is and how it is developed
+* Recognize and be able to define the characteristics of while, do, and for loops
+* Implement repetition in Java programs Articulate what a control structure is in Java and its purpose
+
+##Tasks:
+* Peer assess Unit 1 Written Assignment
+* Read the Learning Guide and Reading Assignments
+* Participate in the Discussion Assignment (post, comment, and rate in the Discussion Forum)
+* Complete and submit the Programming Assignment
+* Make entries to the Learning Journal
+* Take the Self-Quiz
