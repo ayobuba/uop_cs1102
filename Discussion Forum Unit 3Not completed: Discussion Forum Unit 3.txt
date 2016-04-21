@@ -1,0 +1,26 @@
+Provide a description of the try .. catch statement. As part of your description you must describe how this 
+statement can be used to handle errors and exceptions and include an example of try ... catch implemented 
+to handle an error or exception within a Java program.
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/try.html
+
+basic format:
+
+try {
+    code
+}
+catch and finally blocks . . .
+
+- used to catch runtime errors and handle them instaed of letting the program crash or...
+
+- the catch part specifies the run time exceptions that you want to catch or handle yourself
+
+- There can be multiple catch statements to catch different errors types
+
+example: 
+
+try {
+	x = x/0;
+} catch (ArithmeticException divideByZero) {
+	System.out.println ( "You attempted to divide by zero");
+}
