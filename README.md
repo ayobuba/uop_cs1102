@@ -59,3 +59,30 @@ Learning Guide Unit 2
 * Complete and submit the Programming Assignment
 * Make entries to the Learning Journal
 * Take the Self-Quiz
+
+<br><br>
+Learning Guide Unit 3
+
+##Unit 3: Branches
+
+##Topics:
+* The if statement
+* The switch statement
+* Exceptions
+* The try … catch statements
+* Learning Objectives:
+
+##By the end of this Unit, you will be able to:
+* Articulate the role and value of branching control structures within high level programming languages
+* Recognize and be able to define the characteristics of if, then, else and switch ‘case’ branch structures
+* Recognize and be able to articulate the operation of the try .. catch exception structure and be able to identify opportunities for the use of this structure in programming
+* Implement if, then, else and switch structures within Java programs
+* Implement the try … catch exception handling structure within Java programs
+
+##Tasks:
+* Peer assess Unit 2 Programming Assignment
+* Read the Learning Guide and Reading Assignments
+* Participate in the Discussion Question (post, comment, and rate in the Discussion Forum)
+* Complete and submit the Programming Assignment
+* Make entries to the Learning Journal
+* Take the Self-Quiz
