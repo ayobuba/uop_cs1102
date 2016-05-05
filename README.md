@@ -115,3 +115,27 @@ Learning Guide Unit 4
 * Complete and submit the Programming Assignment
 * Make entries to the Learning Journal
 * Take the Self-Quiz
+
+
+##Learning Guide Unit 5
+##Unit 5: Object Oriented Programming
+
+##Topics:
+* Programming with Objects
+* Object-oriented Analysis and Design
+* Learning Objectives:
+
+##By the end of this Unit, you will be able to:
+* Learn how to use Java’s polymorphism to extend existing classes.
+* Understand the meaning of a wrapper class.
+* Learn about Java’s Object class
+* Study principles of Object-oriented Analysis and Design and follow an example
+
+##Tasks:
+* Peer assess Unit 4 Programming Assignment
+* Read the Learning Guide and Reading Assignments
+* Participate in the Discussion Question (post, comment, and rate in the Discussion Forum)
+* Complete and submit the Programming Assignment
+* Make entries to the Learning Journal
+* Take the Self-Quiz
+* Take the Graded Quiz
