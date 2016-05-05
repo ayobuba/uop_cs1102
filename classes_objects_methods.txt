@@ -1,0 +1,21 @@
+Classes serve as blank templates for creating objects, and you declare a class with the class keyword followed by 
+the name of the class (uppercased or camelcased) and curly braces that contain the class's
+methods, constructors and other fields. Constructors are used within the class to initialize new objects. 
+Declarations lay out the state of the class. 
+
+class MyClass {
+	// field, constructor and method declarations
+}
+
+Methods implement the behavior of the class and its objects, and they have six components: (1) modifiers
+(public, private, etc.); (2) return type (void, Int, etc.); (3) method name; (4) parameters list in parenthesis; 
+(5) an exception list (not required); and the method body, enclosed in curly braces. 
+
+public double myMethod(Int num) {
+	// method body
+}
+
+Objects belong to classes and are inheret the attributes of their parent class. 
+
+public class
+
