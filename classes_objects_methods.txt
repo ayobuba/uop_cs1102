@@ -15,7 +15,18 @@ public double myMethod(Int num) {
 	// method body
 }
 
-Objects belong to classes and are inheret the attributes of their parent class. 
+Objects are instances of a class, belong to a parent classes and are inheret the parent class's attributes. 
+Objects can relate to real-world objects, which have both state and behavior. In Java, every object also has 
+behaviors that describe what it can do, methods and characteristics that describe the object, attributes (state). 
+You can call an object's methods using the dot notation, as in myObject.myMethod(). Attributes are defined 
 
-public class
+Instantiation refers to the process of creating an object using an existing class (ie. creating an instance of
+an object). This is done by assigning the class associated with an object to a new variable, 
+as in myObject = new myClass().
+
+
+
+
+
+
 
