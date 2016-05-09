@@ -1,0 +1,91 @@
+Learning Guide Unit 5
+
+Introduction
+Objects and Instance Methods
+Where as a subroutine represents a single task, an object can encapsulate both data (in the form of instance variables) and a number of different tasks or “behaviors” related to that data (in the form of instance methods). Therefore objects provide another, more sophisticated type of structure that can be used to help manage the complexity of large programs.
+
+Constructors and Object Initialization
+Object types in Java are very different from the primitive types. Simply declaring a variable whose type is given as a class does not automatically create an object of that class. Objects must be explicitly constructed. For the computer, the process of constructing an object means, first, finding some unused memory in the heap that can be used to hold the object and, second, filling in the object’s instance variables.
+
+Java Built-in Classes
+The designers of Java have already provided a large number of reusable classes. Some of these classes are meant to be extended to produce new classes, while others can be used directly to create useful objects. If you are faced with a task that looks like it should be fairly common, look through a Java reference to see whether a class already exists that you can use.
+
+Some of the built-in classes you will encounter are these:
+StringBuffer class, in the standard package java.lang, is useful for building strings. java.util contains many classes. For example, classes for working with collections of objects (this is covered in later units). Another class in this package, java.util.Date, is used to represent times. Another class, java.util.Random is useful for generating random numbers.
+Wrapper Classes
+Primitive types are not classes, and values of primitive type are not objects. However, sometimes it’s useful to treat a primitive value as if it were an object. You can’t do that literally, but you can “wrap” the primitive type value in an object belonging to one of the wrapper classes. Starting with Java version 5.0, a feature called autoboxing allows you to automatically convert between a primitive type and its corresponding wrapper class.
+
+The wrapper classes provide many useful capabilities, some of which are described at the end of section 5.3.2.
+
+The Object Class
+Every class in Java (with just one exception) is a subclass of some other class. If you create a class and don’t explicitly make it a subclass of some other class, then it automatically becomes a subclass of the special class named Object. Object is the one class that is not a subclass of any other class. Class Object defines several instance methods that are inherited by every other class. You can use these methods in any object.
+
+Object-oriented Analysis and Design
+Java lets you create subclasses, making existing classes highly reusable. If a class needs to be customized, a subclass can be created, and additions or modifications can be made in the subclass without making any changes to the original class. Critical to this ability is a well-designed superclass crafted to model some particular type of object or a single coherent concept.
+
+Section 5.3.4 provides some guidelines for successful software engineering based on object oriented programming.
+Section 5.4 outlines design considerations and class specifications for a card game. Code for a sample card game is provided.
+Unit 6 begins to introduce some of the basic concepts of object oriented programming. In our reading assignment, we are exposed to some new terms such as class, method, and object. We are also exposed to the difference between a procedural programming language and an object oriented programming language. Many if not most object oriented languages have the ability to operate as both procedural and object oriented depending upon how your write the programs. All of the programming that we have done to date in Python, for example, has been procedural. We will now being to learn about object oriented programming. Object oriented programming has distinct advantages over procedural programming that we will learn about. One of these advantages is that it makes the code that we as programmers produce reusable. Object oriented code is more reusable because it is modular and encapsulates both the programming code and the data that it operates on making it easy to reuse.
+
+One disadvantage of object oriented programming is that it can be a bit more difficult to initially grasp the fundamental concepts of object oriented (OO) programming. The following will introduce some of the key ideas in OO programming.
+
+Object
+We need to begin by defining an object. The American Heritage dictionary defines an object as "Something perceptible by one or more of the senses, especially by vision or touch; a material thing."
+
+Let’s take the family pet, a dog, as an object. It has characteristics and behaviors that we can describe. The characteristics might be that it has 4 legs, short fur, a small size, and a short tail. The behaviors might be that it barks, eats, sleeps, wags its tail and occasionally chases it.
+
+Now let’s equate this to object oriented programming. We defined the characteristics and behaviors of a dog, but this could refer to any dog. Our description of the dog is just that, a description, a blueprint of a dog but not the dog itself. In OO programming we refer to this description as a ‘class’. The class describes the object but is not the object itself.
+
+
+In OO programming we use the ‘class’ to create a specific instance of an object. This process of using a class to create an object is called instantiation which simply means to create an instance of an object. In our reading for this week we will learn how to create a new instance of an object from a class by assigning the class to a variable.
+
+
+We now know that a class is the blueprint or description of an object and that the object is a specific instance of that class. It is important to understand that many object instances can be created using a class within the same program and this is one of the powerful features of OO programming.
+
+
+Attributes
+We can now move on to understanding attributes and methods. We discussed before that a dog has characteristics, fur, legs, tail and other characteristics. These characteristics or attributes of the dog are what make a particular instance of a dog different than other instances of the dog. Imagine that the family dog is a Chihuahua.
+
+
+In this case our Dog object has specific attributes such as:
+
+Fur = short
+Legs = 4
+Tail = medium length
+Breed = Chihuahua
+Color = Tan
+Imagine that we have second dog with the following characteristics:
+
+
+Fur = long
+Legs = 4
+Tail = long
+Breed = Golden Retriever
+Color = Red
+As you can see each is the same class …. Dog, but the attributes make each instance of the object different and unique. This demonstrates another important characteristic of object in that the data that is used by or used to define or describe an object is a part of the object. The data (attributes) and what the object does (methods) are combined together.
+
+Methods
+Speaking of methods, we said before that an object has both attributes which describe the object and the behaviors of the object or what the object does. These behaviors are called methods. Methods are the ‘actions’ that the object can perform. In the case of our Dog object, we defined a class which listed 4 things that the dog could do. The dog could eat, sleep, wag its tail, and chase its tail. Each of these behaviors are the actions that the object dog can do. In OO programming we call these actions ‘methods’.
+
+Methods are typically names using action verbs as they indicate something that the object will do … such as eat, fetch a stick, or chase tail!
+
+
+An example of using an object in practice
+
+The "3N+1" sequence was used as an example several times in the textbook. The file ThreeN.java is a simple implementation. You can run the program to see what it does, and you can review the definition of the 3N+1 sequence in Section 3.2.2 of the textbook.
+
+One problem with this program is that the number N can get so large that it can no longer be represented as a 32-bit integer. When this happens, you get no warning, but the program is no longer computing the sequence correctly. This is a general problem when working with 32-bit integers. In mathematics, integers can be arbitrarily big. Why can't the computer use arbitrarily big integers?
+
+In fact, it can (limited only by the amount of memory that is available). In Java, the standard class BigInteger represents integers that can be arbitrarily large. The first exercise of the lab is to modify the ThreeN program to use BigInteger instead of int, so that it will be able to work with integers of any size. The first step is to import the BigInteger class, which is found in the package java.math . Use this directive at the top of the source code: BitIntegers are objects, not primitive values. That means that you have to create them with a constructor, using the new operator. The BigInteger constructor takes a parameter of type String. The string should contain the number written out in ordinary, decimal notation. For example, to create BigIntegers to represent the integers 1 and 123456789012345678901234567890, you could say:
+
+BigInteger one, reallyBig;
+one= new BigInteger("1");
+reallyBig = new BigInteger("123456789012345678901234567890");  
+Furthermore, when using BigInteger, you can't do arithmetic with the operators +, -, *, /, and %. Instead, you have to use instance methods. For example, to add 1 to reallyBig, you would say
+
+reallyBig = reallyBig.add(one);  
+The methods subtract, multiply, divide, and mod work similarly (where mod is the equivalent of the % operator).
+
+Again, since BigIntegers are objects, they should not be compared with the == operator. Instead, use the equals method, just as you do for strings.
+
+import java.math.BigInteger;  
