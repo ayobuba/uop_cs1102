@@ -19,19 +19,19 @@ public class Main {
         int countSnakeEyes = 0;
         int die1 = 0;
         int die2 = 0;
-            while (die2 != die1) {
-                die1 = (int)(Math.random()*6)+1;
-                TextIO.putln(die1);
+        do {
+            die1 = (int)(Math.random()*6)+1;
+                //System.out.println(die1 + " rolling die1");
                 die2 = (int)(Math.random()*6)+1;
-                TextIO.putln(die2);
+                //System.out.println(die2 + " rolling die2");
                 countSnakeEyes += 1;
-                TextIO.putln(countSnakeEyes);
-            }
-        if (die1 == 1 && die2 == 1) {
-            TextIO.putln("Snake Eyes after " + countSnakeEyes + " rolls of the dice");
-                
-
-}}}
+                //System.out.println(countSnakeEyes + " count of snake eyes");
+        }    
+        while (die2 != die1);
+        TextIO.putln("Snake Eyes after " + countSnakeEyes + " rolls of the dice");
+            
+    }
+}
         
         
         

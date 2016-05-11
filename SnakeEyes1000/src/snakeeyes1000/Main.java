@@ -16,16 +16,23 @@ public class Main {
         int avgSErolls = 0;
         int die1 = 0;
         int die2 = 0;
-            while (countSnakeEyes <= 1000) {
-                die1 = (int)(Math.random()*6)+1;
-                die2 = (int)(Math.random()*6)+1;
-                totalRolls += 1;
-                if (die1 == 1 && die2 == 1) {
-                    countSnakeEyes += 1;
-                    avgSErolls = countSnakeEyes / totalRolls;
+        do {
+            die1 = (int)(Math.random()*6)+1;
+                //System.out.println(die1 + " rolling die1");
+            die2 = (int)(Math.random()*6)+1;
+                //System.out.println(die2 + " rolling die2");
+            totalRolls += 1;
+            if (die1 == die2) {
+                countSnakeEyes += 1;
+            }
+                //System.out.println(countSnakeEyes + " count of snake eyes");
+        }        
+        while (countSnakeEyes <= 1000);
+        avgSErolls = countSnakeEyes / totalRolls;
+        TextIO.putln(avgSErolls + " average snake eyes per 1000 rolls");
                 }
             }
-        TextIO.putln(avgSErolls + " rolls to get Snake Eyes");
+        
                 
 
 }}
