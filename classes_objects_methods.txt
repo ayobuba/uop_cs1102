@@ -1,0 +1,32 @@
+Classes serve as blank templates for creating objects, and you declare a class with the class keyword followed by 
+the name of the class (uppercased or camelcased) and curly braces that contain the class's
+methods, constructors and other fields. Constructors are used within the class to initialize new objects. 
+Declarations lay out the state of the class. 
+
+class MyClass {
+	// field, constructor and method declarations
+}
+
+Methods implement the behavior of the class and its objects, and they have six components: (1) modifiers
+(public, private, etc.); (2) return type (void, Int, etc.); (3) method name; (4) parameters list in parenthesis; 
+(5) an exception list (not required); and the method body, enclosed in curly braces. 
+
+public double myMethod(Int num) {
+	// method body
+}
+
+Objects are instances of a class, belong to a parent classes and are inheret the parent class's attributes. 
+Objects can relate to real-world objects, which have both state and behavior. In Java, every object also has 
+behaviors that describe what it can do, methods and characteristics that describe the object, attributes (state). 
+You can call an object's methods using the dot notation, as in myObject.myMethod(). Attributes are defined 
+
+Instantiation refers to the process of creating an object using an existing class (ie. creating an instance of
+an object). This is done by assigning the class associated with an object to a new variable, 
+as in myObject = new myClass().
+
+
+
+
+
+
+
