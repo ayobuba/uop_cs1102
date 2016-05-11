@@ -17,6 +17,8 @@ public class StatCalc {
    /**
     * Add a number to the dataset.  The statistics will be computed for all
     * the numbers that have been added to the dataset using this method.
+    * The set of numbers that you must use is as follows:
+    * 5 7 12 23 3 2 8 14 10 5 9 13
     */
    public void enter(double num) {
           count++;
@@ -56,3 +58,16 @@ public class StatCalc {
    }         
 }  // end class StatCalc
 
+public class MyStats {
+     
+    public static void main(String[] args) {
+     
+     StatCalc myStatCalc;
+     myStatCalc = new StatCalc();
+     
+     System.out.println("\nMy Statistics:\n"); 
+     System.out.println("Count: " + myStatCalc.getCount()); // Print Count
+     System.out.println("Mean: " + myStatCalc.getMean()); // Print Mean
+     System.out.println("Standard Deviation: " + myStatCalc.getStandardDeviation()); // Print Standard Deviation
+    } // end main()
+ } // end myStats

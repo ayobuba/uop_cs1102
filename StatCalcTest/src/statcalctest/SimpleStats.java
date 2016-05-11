@@ -1,13 +1,14 @@
+     
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package payrollsystem;
+package statcalctest;
 
 /**
  *
  * @author brocd8s
  */
-public class PartTime extends Employee{
+public class SimpleStats {
     
 }
