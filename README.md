@@ -139,3 +139,31 @@ Learning Guide Unit 4
 * Make entries to the Learning Journal
 * Take the Self-Quiz
 * Take the Graded Quiz
+
+
+##Learning Guide Unit 6
+
+##Overview
+##Unit 6: Inheritance, Polymorphism, and Interfaces...Oh my!
+
+##Topics:
+* Inheritance and Polymorphism
+* Special variables
+* Interfaces, Nested Classes, Enums as Classes
+* What is GUI all about?
+* Mouse and keyboard events
+
+##Learning Objectives:
+
+By the end of this Unit, you will be able to:
+* Understand more concepts in Object-oriented Programming: Inheritance and Polymorphism, Interfaces, and Nested Classes
+* Meet two new special variables: this and super
+* Learn about the limitations of constructors in subclasses
+
+##Tasks:
+* Peer assess Unit 5 Programming Assignment
+* Read the Learning Guide and Reading Assignments
+* Participate in the Discussion Question (post, comment, and rate in the Discussion Forum)
+* Complete and submit the Programming Assignment
+* Make entries to the Learning Journal
+* Take the Self-Quiz
