@@ -1,37 +1,36 @@
 package statcalc;
-      /**
-      * Computes and display several statistics for a set of non-zero
-      * numbers entered by the user.  (Input ends when user enters 0.)
-      * This program uses StatCalc.java.
-      */
-     
-     import java.util.Scanner;
+// This program uses StatCalc.java.
+import java.util.Scanner;   
 
-     public class SummaryStats {
+public class SummaryStats {
    
-       public static void main(String[] args) {
+   public static void main(String[] args) {
    
           Scanner in = new Scanner(System.in);
    
-          StatCalc calc; // Computes stats for numbers entered by user.
-          calc = new StatCalc();
+          StatCalc myStatCalc; // Computes stats for numbers entered by user
+          myStatCalc = new StatCalc();
    
-          double item; // One number entered by the user.
-   
+          double item; // Number entered by user
+          
+          // Prompt user for list of numbers
           System.out.println("Enter your list of numbers, zero to end: ");
-   
+          
+          // for each number, add to myStatCalc
           do {
              System.out.print(">> ");
              item = in.nextDouble();
              if (item != 0)
-                calc.enter(item);
+                myStatCalc.enter(item);
           } while (item != 0);
    
-          System.out.println("\nStatistics:");
-          System.out.println("Count:              " + calc.getSum());
-          System.out.println("Mean:               " + calc.getMean());
-          System.out.println("Standard Deviation: " + calc.getStandardDeviation());
+          // Print off summary stats for user
+          System.out.println("\n     Summary Statistics");
+          System.out.println("-----------------------------");
+          System.out.println("Count:                " + myStatCalc.getSum());
+          System.out.println("Mean:                 " + myStatCalc.getMean());
+          System.out.println("Standard Deviation:   " + myStatCalc.getStandardDeviation());
    
-       } // end main()
+   } // end main()
    
-    } // end SimpleStats
+} // end SummaryStats

@@ -1,0 +1,74 @@
+In unit 6 we are introduced to the concept of polymorphism which is derived from the Greek words poly, 
+which means many and morpheus, which means form, structure. Discuss polymorphism in objective oriented 
+programming and provide a java example that details the implementation of polymorphism in java objects.
+
+Polymorphism - refers to the ability to appear in many forms
+- in java : the ability of a reference variable to change behavior according to what object instance it is holding
+- allows multiple objects of different subclasses to be treated as objects of a single superclass, while 
+automatically selecting the proper methods to apply to a particular object based on the subclass it belongs
+to
+- you can call a method with or without parameters and java will determine the form you intend to use
+
+Polymorphism is one of the major distinguishing and powerful features of object-oriented programming. 
+The term means that different objects can respond to the same message (or call to a method) in different ways, 
+depending on the actual type of the object to which the method is applied.
+
+Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class. (https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
+
+---
+
+Polymorphism allows java programs to process objects of various types and classes through a single, uniform interface (http://www.sitepoint.com/quick-guide-to-polymorphism-in-java/).
+Polymorphism is used in OOP to separate the interface and implementation so as to allow the programmer to
+program at the interface in the design of a complex system (http://www.ntu.edu.sg/home/ehchua/programming/java/j3b_oopinheritancepolymorphism.html#zz-4).
+
+In Java, subclasses can define their own unique behaviors but still share functionality with the parent class (https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html).
+
+An example of polymorphism might be a Shape superclass that defines the behiviors of specific shapes:
+
+public class Shape {
+	// private member variable
+	private String color;
+	// constructor
+	public Shape (String color) {
+		this.color = color;
+}
+}
+
+	// all shapes have a method getArea()
+	public double getArea() {
+	
+	
+}
+ 
+//define a rectangle subclass
+public class Rectangle extends Shape {
+	// private member variables
+	private int length;
+	private int width;
+
+	// constructor
+	public Rectangle (String color, int length, int width) {
+	super(color);
+	this.length = length;
+	this.width = width;
+
+	// Override the inherited getArea() to provide the proper implementation
+   @Override
+   public double getArea() {
+      return length*width;
+   }
+
+}
+
+// define a triangle subclass
+public class Triangle extends Shape {
+   // Private member variables
+   private int base;
+   private int height;
+}
+
+ // Override the inherited getArea() to provide the proper implementation
+   @Override
+   public double getArea() {
+      return 0.5*base*height;
+   }

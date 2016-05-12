@@ -1,19 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package payrollsystem;
 
-/**
- *
- * @author brocd8s
- */
+// 
 public abstract class Employee {
     // class variables
     private int empId;
     private String name;
     private Vehicle vehicle;
 
+    
+    public abstract double calculatePay(); 
+    // Getters and Setters
+    
     /**
      * @return the empId
      */
