@@ -8,40 +8,19 @@ package payrollsystem;
 public class PartTime extends Employee {
     private double rate;
     private double hoursWorked;
-    private double calculatePay() {
+    
+    public PartTime (int id, String name, double rate, double hoursWorked2, Vehicle v1) {
+        
+        super (id, name, v1);
+        this.rate = rate;
+        this.hoursWorked = hoursWorked2;
         System.out.println("Part time employee.");
         return (this.getHoursWorked() + this.getRate());
     }
 
-    /**
-     * @return the salary
-     */
-    public double getSalary() {
-        return salary;
-    }
-
-    /**
-     * @param salary the salary to set
-     */
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    /**
-     * @return the overtime
-     */
-    public double getOvertime() {
-        return overtime;
-    }
-
-    /**
-     * @param overtime the overtime to set
-     */
-    public void setOvertime(double overtime) {
-        this.overtime = overtime;
-    }
-
-    /**
+    
+    
+     /**
      * @return the rate
      */
     public double getRate() {

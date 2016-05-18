@@ -1,7 +1,5 @@
-
 package box;
 
-class Box {
 class Box {
  
    double width;

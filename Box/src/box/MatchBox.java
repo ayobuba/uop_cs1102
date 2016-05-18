@@ -1,33 +1,25 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package box;
 
-/**
- *
- * @author brocd8s
- */
 public class MatchBox extends Box {
     
-    w = 5;
-    h = 10;
-    d = 3;
+    private double weight;
     
-    public void getVolume() {
-        double v = 0;
+    MatchBox() {
         
-        // returns the values of width, height, depth, and weight
-        return w;
-        return h;
-        return d;
-        // calculates and returns the volume by multiplying height by width by depth
-        v = w * h * d;
+    }
+    
+    MatchBox(double w, double h, double d, double m) {
+        super(w, h, d);
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
+        this.weight = weight;        
     }
     
     public void calculateWeight() {
-        //  calculates weight based on volume 
+        // calculates weight based on volume 
         // water weighs .03611 pounds per cubic inch
+        weight = 0.03611 * getVolume();
         System.out.println("weight of " + MatchBox + " is " + X);
     }
     

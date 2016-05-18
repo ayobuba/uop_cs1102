@@ -9,10 +9,10 @@ public class FullTime extends Employee {
     private double salary;
     private double overtime;
 
-        public FullTime(int id, String name, double sal, double hourAndHalf, Vehicle vehicle) {
-            super(id, name, vehicle);
-            this.overtime = hourAndHalf;
-            this.salary = sal;
+    public FullTime(int id, String name, double sal, double hourAndHalf, Vehicle vehicle) {
+        super(id, name, vehicle);
+        this.overtime = hourAndHalf;
+        this.salary = sal;
 }
     
     @Override
