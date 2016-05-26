@@ -167,3 +167,30 @@ By the end of this Unit, you will be able to:
 * Complete and submit the Programming Assignment
 * Make entries to the Learning Journal
 * Take the Self-Quiz
+
+##Learning Guide Unit 7
+##Unit 7: Array
+
+##Topics:
+* Arrays
+* Dynamic arrays and Array lists
+* Searching and sorting arrays
+* Multi-dimensional arrays
+* Learning Objectives:
+
+##By the end of this Unit, you will be able to:
+* Review techniques for creating arrays, initializing arrays, and processing arrays
+* Learn how to use arrays in loops
+* Understand the power of random access of any array element
+* Create and call variable arity methods
+* Understand the use of partially full arrays and dynamic arrays
+* Learn about vectors and how they differ from array lists
+* Search, sort and unsort with arrays
+
+##Tasks:
+* Peer assess Unit 6 Written Assignment
+* Read the Learning Guide and Reading Assignments
+* Participate in the Discussion Question (post, comment, and rate in the Discussion Forum)
+* Make entries to the Learning Journal
+* Take the Self-Quiz
+* Take the Review Quiz
