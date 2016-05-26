@@ -1,0 +1,31 @@
+[1896:11440:0518/114838:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[1896:11440:0518/114838:VERBOSE1:crash_service.cc(142)] window handle is 000D04DC
+[1896:11440:0518/114838:VERBOSE1:crash_service.cc(290)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[1896:11440:0518/114838:VERBOSE1:crash_service.cc(294)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is electron-crash-service
+[1896:11440:0518/114838:VERBOSE1:crash_service_main.cc(84)] Ready to process crash requests
+[1896:13688:0518/114838:VERBOSE1:crash_service.cc(323)] client start. pid = 9388
+[1896:13688:0518/114841:VERBOSE1:crash_service.cc(323)] client start. pid = 7948
+[15300:6180:0518/114841:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[15300:6180:0518/114841:VERBOSE1:crash_service.cc(142)] window handle is 000708C0
+[15300:6180:0518/114841:VERBOSE1:crash_service.cc(290)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[15300:6180:0518/114841:VERBOSE1:crash_service.cc(294)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is electron-crash-service
+[15300:6180:0518/114841:ERROR:crash_service.cc(301)] could not start dumper
+[1896:13688:0518/115037:VERBOSE1:crash_service.cc(323)] client start. pid = 13064
+[1896:11232:0518/115038:VERBOSE1:crash_service.cc(331)] client end. pid = 13064
+[1896:11232:0518/115053:VERBOSE1:crash_service.cc(331)] client end. pid = 7948
+[1896:11232:0518/115053:VERBOSE1:crash_service.cc(331)] client end. pid = 9388
+[1896:11232:0518/115054:VERBOSE1:crash_service.cc(352)] zero clients. exiting
+[1896:11440:0518/115054:VERBOSE1:crash_service.cc(490)] session ending..
+[1896:11440:0518/115054:VERBOSE1:crash_service.cc(495)] clients connected :3
+clients terminated :3
+dumps serviced :0
+dumps reported :0
+[1896:11440:0518/115054:VERBOSE1:crash_service_main.cc(89)] Session end. return code is 0

@@ -1,12 +1,12 @@
 package payrollsystem;
 
-// 
 public abstract class Employee {
     // class variables
     private int empId;
     private String name;
     private Vehicle vehicle;
 
+    // class constructor
     public Employee() {
         // default constructor is a constructor with zero parameters
         System.out.println("...inside default constructor");
@@ -24,13 +24,14 @@ public abstract class Employee {
      
     public Employee (int pEmpId, String pName, String pPlate, String pColor) {
         // a non default constructor is a constructor with at least one parameter
-        System.out.println("... inside Employee non default constructor")
+        System.out.println("... inside Employee non default constructor");
         empId = pEmpId;
         name = pName;
         this.vehicle = new Vehicle(pPlate, pColor);
     }
     
     public abstract double calculatePay(); 
+    // calculatePay method will be defined within FullTime and PartTime classes
     
     // Getters and Setters
     

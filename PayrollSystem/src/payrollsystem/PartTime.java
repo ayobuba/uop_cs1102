@@ -9,16 +9,17 @@ public class PartTime extends Employee {
     private double rate;
     private double hoursWorked;
     
-    public PartTime (int id, String name, double rate, double hoursWorked2, Vehicle v1) {
-        
+    public PartTime(int id, String name, double rate, double hoursWorked2, Vehicle v1) {
         super (id, name, v1);
         this.rate = rate;
         this.hoursWorked = hoursWorked2;
-        System.out.println("Part time employee.");
-        return (this.getHoursWorked() + this.getRate());
     }
-
     
+    
+    public double calculatePay() {
+        System.out.println("Part time employee.");
+        return (this.hoursWorked() + this.rate());
+    }
     
      /**
      * @return the rate
